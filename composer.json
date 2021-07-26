@@ -1,0 +1,47 @@
+{
+    "name": "dukstra/clickatell",
+    "description": "Clickatell notifications driver",
+    "keywords": ["laravel", "notifications", "clickatell", "sms"],
+    "homepage": "https://github.com/dukstra/clickatell",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evidence Mandizvidza",
+            "email": "evidencefrank@outlook.com",
+            "role": "Software Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/notifications": "~5.5 || ~6.0 || ~7.0 || ~8.0",
+        "illuminate/support": "~5.5 || ~6.0 || ~7.0 || ~8.0",
+        "arcturial/clickatell": "~2.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "~1.3",
+        "phpunit/phpunit": "~9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dukstra\\Clickatell\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dukstra\\Clickatell\\Test\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dukstra\\Clickatell\\ClickatellServiceProvider"
+            ]
+        }
+    }
+}
