@@ -33,10 +33,10 @@ class ClickatellClient
     }
 
     /**
-     * @param array $to String or Array of numbers
+     * @param mixed $to String or Array of numbers
      * @param string $message
      */
-    public function send(array $to, $message)
+    public function send($to, $message)
     {
         $to = collect($to)->toArray();
 
